@@ -1,71 +1,175 @@
-#Hospital Management System (HMS)
+# Hospital Management System (HMS)
 
-A modern, secure, full-stack Hospital Management System with role-based dashboards for Admin, Doctor, and Patient. Built as a scalable, modular MERN-stack application suitable for real-world hospital operations.
+A full-stack Hospital Management System designed to manage hospital operations through separate role-based modules for Admin, Doctor, and Patient.
 
--> ##Objectives## :
-Manage hospital, department, and facility information.
-Manage doctors, their profiles, schedules, and availability.
-Manage patient registration, profiles, and medical history.
-Enable patients to search doctors and book appointments.
-Enable doctors to manage appointments, records, and prescriptions.
-Provide secure, role-based authentication and authorization.
-Provide statistics, analytics, and reporting for administrators.
-Provide notifications for key events across the system.
-Ensure secure handling of sensitive medical information at every layer.
+The project is being developed using the MERN stack with a focus on modular development, secure authentication, role-based access, and an easy-to-use responsive interface.
 
--> Features :
-Role-based dashboards (Admin / Doctor / Patient)
-Doctor and patient CRUD management
-Doctor availability & schedule configuration (days, hours, breaks, leave)
-Appointment booking with real-time slot availability
-Appointment lifecycle management (pending → confirmed → completed / cancelled / rescheduled / no-show)
-Medical history and medical records
-Digital prescriptions (multi-medicine support)
-Medical document uploads (lab reports, X-rays, discharge summaries, etc.)
-Public hospital information pages (departments, services, facilities, contact)
-Notification center per user
-Admin reports & analytics with charts and filters, CSV/PDF export
-Search, filter, sort, and pagination across doctors, patients, and appointments
-Audit logging for administrative actions
-Fully responsive UI (desktop, tablet, mobile)
+---
 
--> User Roles
+## Project Overview
 
-Admin
+The Hospital Management System will provide different functionalities based on the user's role.
 
-Full system control — manages doctors, patients, departments, hospital information, appointments (oversight), reports, audit logs, and system users.
+The system will have three main modules:
 
-Doctor
+* Admin Module
+* Doctor Module
+* Patient Module
 
-Manages their own profile, schedule/availability, appointments, patient medical records, and prescriptions. Cannot access other doctors' data or admin functions.
+The project is being developed collaboratively by two team members, with each member responsible for specific modules.
 
-Patient
+---
 
-Manages their own profile, searches and books appointments with doctors, and views (read-only) their medical records, prescriptions, and documents. Cannot access other patients' data.
+## Team Members
 
-Technology Stack
+| Team Member    | Responsibilities                     |
+| -------------- | ------------------------------------ |
+| Krish Kothari  | Admin Module and Hospital Management |
+| Riyankhan Davi | Doctor Module and Patient Module     |
 
-Frontend
+---
 
-React.js + Vite
-React Router
-Tailwind CSS / Bootstrap
-Axios
-Chart.js / Recharts
-React Hook Form
+## Main Modules
 
-Backend
+### Admin Module
 
-Node.js + Express.js
-REST API architecture
-JWT authentication
-bcrypt (password hashing)
-express-validator / Zod / Joi (validation)
+The Admin module will be responsible for managing the overall hospital system.
 
-Database
+Planned functionalities include:
 
-MongoDB with Mongoose ODM (Architecture designed to be adaptable to MySQL/PostgreSQL if required.)
+* Admin authentication
+* Admin dashboard
+* Doctor management
+* Patient management
+* Department management
+* Hospital information management
+* Appointment management and monitoring
+* Reports and analytics
+* User management
+* Notifications
+* Audit logs
 
-Tooling
+### Doctor Module
 
-VS Code, MongoDB Compass, Postman, Git, GitHub
+The Doctor module will allow doctors to manage their professional activities.
+
+Planned functionalities include:
+
+* Doctor registration and login
+* Doctor profile
+* Doctor availability
+* Schedule management
+* Appointment management
+* Patient information
+* Medical records
+* Medical history
+* Prescription management
+* Medical document management
+* Notifications
+
+### Patient Module
+
+The Patient module will allow patients to manage their information and appointments.
+
+Planned functionalities include:
+
+* Patient registration and login
+* Patient profile
+* Search doctors
+* View doctor availability
+* Book appointments
+* Appointment history
+* Medical history
+* Medical records
+* View prescriptions
+* View medical documents
+* Notifications
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* Vite
+* React Router
+* Tailwind CSS / Bootstrap
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* REST APIs
+* JWT Authentication
+* bcrypt
+
+### Database
+
+* MongoDB
+* Mongoose
+
+### Tools
+
+* Visual Studio Code
+* MongoDB Compass
+* Postman
+* Git
+* GitHub
+
+---
+
+## Project Structure
+
+The project will be developed using a separate frontend and backend structure.
+
+```text
+Hospital-Management-System/
+│
+├── client/
+│   └── React Frontend
+│
+├── server/
+│   └── Node.js + Express Backend
+│
+├── .gitignore
+├── README.md
+└── package.json
+```
+
+The project structure will be expanded as development progresses.
+
+---
+
+## Development Approach
+
+The project will be developed step by step.
+
+Each team member will work on their assigned module using separate Git branches.
+
+### Krish Kothari
+
+Responsible for:
+
+```text
+Admin Module
+Hospital Management
+System Management
+Reports and Analytics
+```
+
+### Riyankhan Davi
+
+Responsible for:
+
+```text
+Doctor Module
+Patient Module
+Doctor and Patient Interfaces
+```
+
+Common functionality such as authentication, database configuration, API integration, and other shared components will be coordinated between both members.
+
+---
+
