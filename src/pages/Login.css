@@ -1,0 +1,1050 @@
+/* =========================================
+   CAREWELL LOGIN PAGE
+   Completely isolated from Auth.css
+========================================= */
+
+.cw-login-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.cw-login-page *,
+.cw-login-page *::before,
+.cw-login-page *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.cw-login-hero {
+  width: 100%;
+  background: #eef8ff;
+  padding: 45px 5%;
+}
+
+.cw-login-layout {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 470px);
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   LEFT PANEL
+========================================= */
+
+.cw-welcome-panel {
+  min-height: 680px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #e4f5ff,
+    #d0edfc
+  );
+}
+
+.cw-welcome-content {
+  width: 58%;
+
+  padding: 55px 20px 45px 50px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.cw-welcome-label {
+  color: #0878d1;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.cw-welcome-content h1 {
+  color: #102f56;
+
+  font-size: 44px;
+
+  line-height: 1.08;
+
+  margin: 18px 0;
+}
+
+.cw-welcome-content h1 span {
+  color: #0878d1;
+}
+
+.cw-welcome-text {
+  color: #52677e;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+  margin: 0;
+
+  max-width: 430px;
+}
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.cw-feature-list {
+  margin-top: 35px;
+}
+
+.cw-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+.cw-feature-icon {
+  width: 48px;
+  height: 48px;
+
+  min-width: 48px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 21px;
+
+  box-shadow: 0 5px 15px rgba(0, 70, 130, 0.08);
+}
+
+.cw-feature h3 {
+  color: #12345b;
+
+  font-size: 15px;
+
+  margin: 0 0 3px;
+}
+
+.cw-feature p {
+  color: #64748b;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.cw-health-quote {
+  max-width: 430px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 18px;
+
+  margin-top: 28px;
+
+  background: rgba(255,255,255,0.72);
+
+  border-left: 4px solid #0878d1;
+
+  border-radius: 10px;
+}
+
+.cw-health-quote > span {
+  color: #0878d1;
+
+  font-size: 36px;
+
+  font-weight: bold;
+}
+
+.cw-health-quote p {
+  color: #12345b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  margin: 0 0 3px;
+}
+
+.cw-health-quote small {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   DOCTOR IMAGE
+========================================= */
+
+.cw-doctor-image {
+  width: 45%;
+  height: 100%;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+}
+
+.cw-doctor-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #e4f5ff 0%,
+    rgba(228,245,255,0.55) 12%,
+    transparent 40%
+  );
+}
+
+.cw-doctor-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  display: block;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.cw-login-card {
+  width: 100%;
+
+  min-height: 680px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 38px;
+
+  box-shadow:
+    0 15px 45px rgba(0,55,110,0.12);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.cw-login-brand {
+  text-align: center;
+
+  color: #0757b8;
+}
+
+.cw-brand-cross {
+  font-size: 38px;
+
+  font-weight: bold;
+
+  line-height: 1;
+}
+
+.cw-login-brand h2 {
+  font-size: 29px;
+
+  margin: 5px 0 0;
+}
+
+.cw-login-brand span {
+  display: block;
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  margin-top: 2px;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.cw-login-card > h1 {
+  color: #102f56;
+
+  text-align: center;
+
+  font-size: 29px;
+
+  margin: 22px 0 6px;
+}
+
+.cw-login-subtitle {
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  margin: 0 0 23px;
+}
+
+/* =========================================
+   ROLE BUTTONS
+========================================= */
+
+.cw-role-buttons {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 9px;
+
+  margin-bottom: 20px;
+}
+
+.cw-role-buttons button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 100%;
+
+  height: 48px;
+
+  margin: 0;
+  padding: 0 5px;
+
+  border: 1px solid #d7e5ef;
+
+  outline: none;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  box-shadow: none;
+
+  transition: all 0.2s ease;
+}
+
+.cw-role-buttons button:hover {
+  border-color: #0878d1;
+
+  color: #0878d1;
+}
+
+.cw-role-buttons button.cw-role-active {
+  background: #0878d1;
+
+  color: white;
+
+  border-color: #0878d1;
+
+  box-shadow: 0 5px 12px rgba(8,120,209,0.18);
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.cw-login-form {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.cw-form-group {
+  width: 100%;
+
+  margin-bottom: 15px;
+}
+
+.cw-form-group label {
+  display: block;
+
+  color: #12345b;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+/* INPUT BOX */
+
+.cw-input {
+  width: 100%;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid #d7e5ef;
+
+  border-radius: 8px;
+
+  background: white;
+
+  padding: 0 13px;
+
+  margin: 0;
+
+  box-shadow: none;
+
+  outline: none;
+}
+
+.cw-input:focus-within {
+  border-color: #0878d1;
+
+  box-shadow:
+    0 0 0 3px rgba(8,120,209,0.07);
+}
+
+.cw-input > span {
+  width: 20px;
+
+  min-width: 20px;
+
+  margin-right: 9px;
+
+  color: #7890a5;
+
+  text-align: center;
+}
+
+.cw-input input {
+  width: auto !important;
+
+  min-width: 0;
+
+  flex: 1;
+
+  height: 100%;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+
+  border-radius: 0 !important;
+
+  outline: none !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+}
+
+.cw-input input::placeholder {
+  color: #9aabb9;
+}
+
+/* PASSWORD BUTTON */
+
+.cw-password-button {
+  width: 30px;
+
+  height: 30px;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.cw-form-options {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: 4px 0 19px;
+
+  font-size: 13px;
+}
+
+.cw-form-options label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #52677e;
+
+  margin: 0;
+}
+
+.cw-form-options label input {
+  width: 15px !important;
+  height: 15px !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+.cw-form-options a {
+  color: #0878d1;
+
+  text-decoration: none;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.cw-login-button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 100%;
+
+  height: 53px;
+
+  margin: 0;
+
+  border: none;
+
+  border-radius: 27px;
+
+  background: #0878d1;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  transition: 0.2s;
+}
+
+.cw-login-button:hover {
+  background: #075fa8;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.cw-divider {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin: 22px 0 16px;
+}
+
+.cw-divider span {
+  height: 1px;
+
+  flex: 1;
+
+  background: #dce7ef;
+}
+
+.cw-divider p {
+  color: #8a9aaa;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+/* =========================================
+   SOCIAL BUTTONS
+========================================= */
+
+.cw-social-buttons {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+.cw-social-buttons button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 100%;
+
+  height: 43px;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 1px solid #d7e5ef;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.cw-social-buttons button:hover {
+  border-color: #0878d1;
+}
+
+.cw-social-buttons strong {
+  margin-right: 5px;
+}
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.cw-register {
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  margin-top: 20px;
+}
+
+.cw-register a {
+  color: #0878d1;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.cw-benefits {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  background: white;
+
+  padding: 32px 7%;
+
+  border-bottom: 1px solid #e7eef4;
+}
+
+.cw-benefit {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 8px 20px;
+
+  border-right: 1px solid #e1eaf1;
+}
+
+.cw-benefit:last-child {
+  border-right: none;
+}
+
+.cw-benefit > div {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  border-radius: 50%;
+
+  background: #e5f4ff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.cw-benefit h3 {
+  color: #12345b;
+
+  font-size: 15px;
+
+  margin: 0 0 4px;
+}
+
+.cw-benefit p {
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin: 0;
+
+  line-height: 1.4;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.cw-footer {
+  width: 100%;
+
+  background: #09233b;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+
+  gap: 45px;
+
+  padding: 50px 8%;
+}
+
+.cw-footer h3 {
+  font-size: 15px;
+
+  margin: 0 0 15px;
+}
+
+.cw-footer p,
+.cw-footer a {
+  color: #c5d2df;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.cw-footer p {
+  margin: 7px 0;
+}
+
+.cw-footer a {
+  display: block;
+
+  text-decoration: none;
+
+  margin: 7px 0;
+}
+
+.cw-footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 14px;
+}
+
+.cw-footer-brand > span {
+  font-size: 30px;
+}
+
+.cw-footer-brand h2 {
+  margin: 0;
+
+  font-size: 23px;
+}
+
+.cw-footer-brand small {
+  display: block;
+
+  font-size: 8px;
+
+  letter-spacing: 3px;
+}
+
+.cw-copyright {
+  width: 100%;
+
+  min-height: 55px;
+
+  background: #061a2c;
+
+  color: #b8c6d4;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 18px;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .cw-login-layout {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+  }
+
+  .cw-welcome-panel {
+    min-height: 500px;
+  }
+
+  .cw-login-card {
+    min-height: auto;
+
+    max-width: 520px;
+
+    justify-self: center;
+  }
+
+  .cw-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cw-benefit {
+    border-right: none;
+
+    border-bottom: 1px solid #e1eaf1;
+
+    padding: 18px;
+  }
+
+  .cw-benefit:nth-child(odd) {
+    border-right: 1px solid #e1eaf1;
+  }
+
+  .cw-benefit:nth-child(3),
+  .cw-benefit:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .cw-login-hero {
+    padding: 25px 15px;
+  }
+
+  .cw-welcome-panel {
+    min-height: auto;
+  }
+
+  .cw-welcome-content {
+    width: 100%;
+
+    padding: 40px 28px;
+  }
+
+  .cw-welcome-content h1 {
+    font-size: 36px;
+  }
+
+  .cw-doctor-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 320px;
+  }
+
+  .cw-doctor-image::after {
+    display: none;
+  }
+
+  .cw-login-card {
+    padding: 32px 24px;
+  }
+
+  .cw-benefits {
+    grid-template-columns: 1fr;
+
+    padding: 25px 5%;
+  }
+
+  .cw-benefit {
+    border-right: none !important;
+
+    border-bottom: 1px solid #e1eaf1;
+
+    justify-content: flex-start;
+
+    padding: 18px 10px;
+  }
+
+  .cw-benefit:last-child {
+    border-bottom: none;
+  }
+
+  .cw-footer {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    padding: 40px 7%;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .cw-role-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-role-buttons button {
+    height: 46px;
+  }
+
+  .cw-social-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-form-options {
+    font-size: 12px;
+  }
+
+  .cw-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-welcome-content h1 {
+    font-size: 32px;
+  }
+
+}
