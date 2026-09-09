@@ -1,0 +1,1026 @@
+/* =========================================
+   CAREWELL REGISTER PAGE
+========================================= */
+
+.cw-register-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.cw-register-page *,
+.cw-register-page *::before,
+.cw-register-page *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.cw-register-hero {
+  width: 100%;
+
+  background: #eef8ff;
+
+  padding: 42px 5%;
+}
+
+.cw-register-layout {
+  width: 100%;
+
+  max-width: 1350px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(560px, 1.05fr);
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   LEFT PANEL
+========================================= */
+
+.cw-register-welcome {
+  min-height: 680px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(255,255,255,0.8),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #e3f5ff,
+      #ccecff
+    );
+}
+
+.cw-register-content {
+  width: 58%;
+
+  padding: 52px 20px 40px 50px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.cw-register-label {
+  color: #0878d1;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.cw-register-content h1 {
+  color: #102f56;
+
+  font-size: 43px;
+
+  line-height: 1.08;
+
+  margin: 18px 0;
+}
+
+.cw-register-content h1 span {
+  color: #0878d1;
+}
+
+.cw-register-description {
+  color: #52677e;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  max-width: 420px;
+
+  margin: 0;
+}
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.cw-register-features {
+  margin-top: 30px;
+}
+
+.cw-register-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.cw-register-feature-icon {
+  width: 47px;
+  height: 47px;
+
+  min-width: 47px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 5px 15px rgba(0,70,130,0.08);
+}
+
+.cw-register-feature h3 {
+  color: #12345b;
+
+  font-size: 15px;
+
+  margin: 0 0 3px;
+}
+
+.cw-register-feature p {
+  color: #64748b;
+
+  font-size: 12px;
+
+  margin: 0;
+}
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.cw-register-quote {
+  max-width: 420px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 17px;
+
+  margin-top: 24px;
+
+  background: rgba(255,255,255,0.7);
+
+  border-left: 4px solid #0878d1;
+
+  border-radius: 10px;
+}
+
+.cw-register-quote > span {
+  color: #0878d1;
+
+  font-size: 36px;
+
+  font-weight: bold;
+}
+
+.cw-register-quote p {
+  color: #12345b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  margin: 0 0 3px;
+}
+
+.cw-register-quote small {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   DOCTOR
+========================================= */
+
+.cw-register-doctor {
+  width: 46%;
+
+  height: 100%;
+
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+}
+
+.cw-register-doctor::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #e3f5ff 0%,
+    rgba(227,245,255,0.45) 18%,
+    transparent 45%
+  );
+}
+
+.cw-register-doctor img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+}
+
+/* =========================================
+   REGISTER CARD
+========================================= */
+
+.cw-register-card {
+  width: 100%;
+
+  min-height: 680px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 32px 34px;
+
+  box-shadow:
+    0 15px 45px rgba(0,55,110,0.12);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.cw-register-brand {
+  text-align: center;
+
+  color: #0757b8;
+}
+
+.cw-register-cross {
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: bold;
+}
+
+.cw-register-brand h2 {
+  font-size: 28px;
+
+  margin: 4px 0 0;
+}
+
+.cw-register-brand span {
+  display: block;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.cw-register-card > h1 {
+  color: #102f56;
+
+  text-align: center;
+
+  font-size: 27px;
+
+  margin: 17px 0 5px;
+}
+
+.cw-register-subtitle {
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  margin: 0 0 19px;
+}
+
+/* =========================================
+   ROLES
+========================================= */
+
+.cw-register-roles {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-bottom: 17px;
+}
+
+.cw-register-roles button {
+  width: 100%;
+
+  height: 44px;
+
+  padding: 0;
+
+  border: 1px solid #d7e5ef;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  transition: 0.2s;
+}
+
+.cw-register-roles button:hover {
+  border-color: #0878d1;
+}
+
+.cw-register-roles button.active {
+  background: #0878d1;
+
+  color: white;
+
+  border-color: #0878d1;
+
+  box-shadow:
+    0 5px 12px rgba(8,120,209,0.18);
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.cw-register-form {
+  width: 100%;
+
+  margin: 0;
+}
+
+.cw-form-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+.cw-register-group {
+  width: 100%;
+}
+
+.cw-register-group label {
+  display: block;
+
+  color: #12345b;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+/* INPUT */
+
+.cw-register-input {
+  width: 100%;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid #d7e5ef;
+
+  border-radius: 7px;
+
+  background: white;
+
+  padding: 0 10px;
+
+  transition: 0.2s;
+}
+
+.cw-register-input:focus-within {
+  border-color: #0878d1;
+
+  box-shadow:
+    0 0 0 3px rgba(8,120,209,0.06);
+}
+
+.cw-register-input > span {
+  width: 19px;
+
+  min-width: 19px;
+
+  margin-right: 7px;
+
+  color: #7890a5;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.cw-register-input input {
+  width: auto !important;
+
+  min-width: 0;
+
+  flex: 1;
+
+  height: 100%;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+}
+
+.cw-register-input input::placeholder {
+  color: #9aabb9;
+}
+
+/* PASSWORD BUTTON */
+
+.cw-register-input button {
+  width: 25px;
+
+  height: 25px;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   TERMS
+========================================= */
+
+.cw-terms {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 7px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  margin: 4px 0 14px;
+
+  cursor: pointer;
+}
+
+.cw-terms input {
+  width: 14px;
+
+  height: 14px;
+
+  min-width: 14px;
+
+  margin: 0;
+}
+
+.cw-terms a {
+  color: #0878d1;
+
+  text-decoration: none;
+}
+
+/* =========================================
+   CREATE ACCOUNT
+========================================= */
+
+.cw-create-account {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #0878d1;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  transition: 0.2s;
+}
+
+.cw-create-account:hover {
+  background: #075fa8;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.cw-register-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 18px 0 13px;
+}
+
+.cw-register-divider span {
+  height: 1px;
+
+  flex: 1;
+
+  background: #dce7ef;
+}
+
+.cw-register-divider p {
+  color: #8a9aaa;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.cw-register-social {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+.cw-register-social button {
+  width: 100%;
+
+  height: 39px;
+
+  border: 1px solid #d7e5ef;
+
+  border-radius: 7px;
+
+  background: white;
+
+  color: #12345b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.cw-register-social strong {
+  margin-right: 5px;
+}
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.cw-login-link {
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  margin-top: 15px;
+}
+
+.cw-login-link a {
+  color: #0878d1;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.cw-register-benefits {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  background: white;
+
+  padding: 30px 7%;
+
+  border-bottom: 1px solid #e7eef4;
+}
+
+.cw-register-benefit {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 8px 20px;
+
+  border-right: 1px solid #e1eaf1;
+}
+
+.cw-register-benefit:last-child {
+  border-right: none;
+}
+
+.cw-register-benefit > div {
+  width: 50px;
+
+  height: 50px;
+
+  min-width: 50px;
+
+  border-radius: 50%;
+
+  background: #e5f4ff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+.cw-register-benefit h3 {
+  color: #12345b;
+
+  font-size: 14px;
+
+  margin: 0 0 3px;
+}
+
+.cw-register-benefit p {
+  color: #64748b;
+
+  font-size: 11px;
+
+  margin: 0;
+
+  line-height: 1.4;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.cw-register-footer {
+  width: 100%;
+
+  background: #09233b;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+
+  gap: 45px;
+
+  padding: 48px 8%;
+}
+
+.cw-register-footer h3 {
+  font-size: 15px;
+
+  margin: 0 0 14px;
+}
+
+.cw-register-footer p,
+.cw-register-footer a {
+  color: #c5d2df;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.cw-register-footer p {
+  margin: 6px 0;
+}
+
+.cw-register-footer a {
+  display: block;
+
+  text-decoration: none;
+
+  margin: 6px 0;
+}
+
+.cw-footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+}
+
+.cw-footer-brand > span {
+  font-size: 29px;
+}
+
+.cw-footer-brand h2 {
+  margin: 0;
+
+  font-size: 22px;
+}
+
+.cw-footer-brand small {
+  display: block;
+
+  font-size: 8px;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.cw-register-copyright {
+  width: 100%;
+
+  min-height: 52px;
+
+  background: #061a2c;
+
+  color: #b8c6d4;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1150px) {
+
+  .cw-register-layout {
+    grid-template-columns: 1fr;
+
+    max-width: 720px;
+  }
+
+  .cw-register-welcome {
+    min-height: 520px;
+  }
+
+  .cw-register-card {
+    min-height: auto;
+
+    max-width: 650px;
+
+    justify-self: center;
+  }
+
+  .cw-register-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cw-register-benefit {
+    border-right: none;
+
+    border-bottom: 1px solid #e1eaf1;
+
+    padding: 18px;
+  }
+
+  .cw-register-benefit:nth-child(odd) {
+    border-right: 1px solid #e1eaf1;
+  }
+
+  .cw-register-benefit:nth-child(3),
+  .cw-register-benefit:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .cw-register-hero {
+    padding: 25px 15px;
+  }
+
+  .cw-register-welcome {
+    min-height: auto;
+  }
+
+  .cw-register-content {
+    width: 100%;
+
+    padding: 40px 28px;
+  }
+
+  .cw-register-content h1 {
+    font-size: 36px;
+  }
+
+  .cw-register-doctor {
+    position: relative;
+
+    width: 100%;
+
+    height: 320px;
+  }
+
+  .cw-register-doctor::after {
+    display: none;
+  }
+
+  .cw-register-card {
+    padding: 30px 22px;
+  }
+
+  .cw-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-register-roles {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-register-social {
+    grid-template-columns: 1fr;
+  }
+
+  .cw-register-benefits {
+    grid-template-columns: 1fr;
+
+    padding: 25px 5%;
+  }
+
+  .cw-register-benefit {
+    border-right: none !important;
+
+    border-bottom: 1px solid #e1eaf1;
+
+    justify-content: flex-start;
+
+    padding: 18px 10px;
+  }
+
+  .cw-register-benefit:last-child {
+    border-bottom: none;
+  }
+
+  .cw-register-footer {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    padding: 40px 7%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .cw-register-content h1 {
+    font-size: 32px;
+  }
+
+  .cw-register-footer {
+    grid-template-columns: 1fr;
+  }
+
+}
