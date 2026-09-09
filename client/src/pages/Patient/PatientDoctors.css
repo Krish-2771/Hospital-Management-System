@@ -1,0 +1,500 @@
+.patient-doctors-page {
+  padding: 30px 35px 45px;
+  background: #f5f9ff;
+  min-height: calc(100vh - 80px);
+}
+
+.patient-doctors-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.patient-doctors-label {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.patient-doctors-header h1 {
+  color: #102f56;
+  font-size: 30px;
+  margin: 6px 0;
+}
+
+.patient-doctors-header p {
+  color: #718096;
+  font-size: 13px;
+}
+
+.patient-find-doctor-button {
+  border: none;
+  background: #0878d1;
+  color: white;
+  border-radius: 9px;
+  padding: 13px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-find-doctor-button span {
+  font-size: 17px;
+  margin-right: 7px;
+}
+
+/* STATS */
+
+.patient-doctor-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.patient-doctor-stat {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 13px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.patient-doctor-stat-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #eaf5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.patient-doctor-stat span {
+  color: #718096;
+  font-size: 11px;
+}
+
+.patient-doctor-stat h2 {
+  color: #102f56;
+  font-size: 24px;
+  margin: 2px 0;
+}
+
+.patient-doctor-stat p {
+  color: #0878d1;
+  font-size: 10px;
+}
+
+/* TOOLBAR */
+
+.patient-doctors-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 13px;
+  padding: 14px;
+  margin-bottom: 25px;
+}
+
+.patient-doctor-search {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #dce7f2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.patient-doctor-search span {
+  color: #0878d1;
+  font-size: 20px;
+}
+
+.patient-doctor-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #243b53;
+  font-size: 11px;
+}
+
+.patient-doctor-search input::placeholder {
+  color: #9aa9b9;
+}
+
+.patient-doctors-toolbar select {
+  height: 40px;
+  border: 1px solid #dce7f2;
+  background: white;
+  color: #52677d;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 11px;
+  outline: none;
+}
+
+/* SECTION HEADER */
+
+.patient-doctors-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.patient-doctors-section-header span {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.patient-doctors-section-header h2 {
+  color: #102f56;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.patient-doctors-section-header p {
+  color: #8a99aa;
+  font-size: 10px;
+}
+
+/* DOCTOR GRID */
+
+.patient-doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.patient-doctor-card {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 14px;
+  padding: 19px;
+  min-width: 0;
+  box-shadow: 0 5px 18px rgba(31, 78, 121, 0.04);
+}
+
+.patient-doctor-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.patient-large-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #e6f3ff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.patient-doctor-availability {
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.patient-doctor-availability.available {
+  color: #18864b;
+  background: #e8f8ef;
+}
+
+.patient-doctor-availability.offline {
+  color: #8a99aa;
+  background: #edf2f7;
+}
+
+.patient-doctor-card-info {
+  margin-top: 14px;
+}
+
+.patient-doctor-card-info h3 {
+  color: #243b53;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.patient-doctor-specialty {
+  color: #0878d1;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.patient-doctor-hospital {
+  color: #8a99aa;
+  font-size: 10px;
+}
+
+.patient-doctor-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+  margin: 17px 0 13px;
+  padding: 13px 0;
+}
+
+.patient-doctor-details span,
+.patient-next-appointment span {
+  display: block;
+  color: #9aa9b9;
+  font-size: 9px;
+  margin-bottom: 4px;
+}
+
+.patient-doctor-details strong {
+  color: #52677d;
+  font-size: 10px;
+}
+
+.patient-next-appointment {
+  background: #f5faff;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient-next-appointment strong {
+  color: #0878d1;
+  font-size: 10px;
+}
+
+.patient-next-appointment > span {
+  font-size: 17px;
+}
+
+.patient-doctor-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.patient-doctor-actions button {
+  border-radius: 7px;
+  padding: 9px 5px;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-view-doctor {
+  border: 1px solid #dce7f2;
+  background: white;
+  color: #0878d1;
+}
+
+.patient-book-doctor {
+  border: 1px solid #0878d1;
+  background: #0878d1;
+  color: white;
+}
+
+/* BANNER */
+
+.patient-doctors-bottom-banner {
+  margin-top: 22px;
+  background: linear-gradient(110deg, #e4f4ff, #f6fbff);
+  border: 1px solid #d8eafa;
+  border-radius: 14px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.patient-doctors-banner-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.patient-doctors-bottom-banner > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-doctors-bottom-banner span {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.patient-doctors-bottom-banner h2 {
+  color: #102f56;
+  font-size: 17px;
+  margin: 4px 0;
+}
+
+.patient-doctors-bottom-banner p {
+  color: #718096;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.patient-doctors-bottom-banner button {
+  border: none;
+  background: #0878d1;
+  color: white;
+  border-radius: 8px;
+  padding: 11px 15px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .patient-doctors-page {
+    padding: 25px;
+  }
+
+  .patient-doctor-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .patient-doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .patient-doctors-page {
+    padding: 22px 18px 35px;
+  }
+
+  .patient-doctors-header h1 {
+    font-size: 26px;
+  }
+
+  .patient-doctors-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .patient-doctor-search {
+    flex-basis: 100%;
+  }
+
+  .patient-doctors-toolbar select {
+    flex: 1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .patient-doctors-page {
+    padding: 18px 14px 30px;
+  }
+
+  .patient-doctors-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .patient-doctors-header h1 {
+    font-size: 23px;
+  }
+
+  .patient-find-doctor-button {
+    width: 100%;
+  }
+
+  .patient-doctor-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .patient-doctors-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .patient-doctor-search {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .patient-doctors-toolbar select {
+    width: 100%;
+    flex: none;
+  }
+
+  .patient-doctors-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .patient-doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-doctors-bottom-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 18px;
+  }
+
+  .patient-doctors-bottom-banner button {
+    width: 100%;
+  }
+}
+
+/* SMALL PHONE */
+
+@media (max-width: 420px) {
+  .patient-doctors-header h1 {
+    font-size: 21px;
+  }
+
+  .patient-doctor-card {
+    padding: 16px;
+  }
+
+  .patient-doctor-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-doctors-bottom-banner h2 {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,803 @@
+.patient-settings-page {
+  min-height: calc(100vh - 80px);
+  padding: 30px 35px 45px;
+  background: #f7faff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.settings-page-header {
+  margin-bottom: 22px;
+}
+
+.settings-page-header h1 {
+  margin: 0 0 5px;
+  color: #102f56;
+  font-size: 30px;
+}
+
+.settings-page-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.settings-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(350px, 1fr) 360px;
+  gap: 15px;
+  align-items: start;
+}
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.settings-card {
+  border: 1px solid #e1ebf5;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* =========================
+   LEFT MENU
+========================= */
+
+.settings-menu {
+  padding: 10px;
+  border: 1px solid #e1ebf5;
+  border-radius: 12px;
+  background: white;
+}
+
+.settings-menu-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 13px;
+  padding: 13px 12px;
+  margin-bottom: 3px;
+  border: none;
+  border-left: 3px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  color: #59799c;
+  text-align: left;
+  cursor: pointer;
+}
+
+.settings-menu-item:hover {
+  background: #f7fbff;
+}
+
+.settings-menu-item.active {
+  border-left-color: #0878d1;
+  background: #edf7ff;
+}
+
+.settings-menu-item > span {
+  width: 25px;
+  flex-shrink: 0;
+  color: #0878d1;
+  font-size: 19px;
+  text-align: center;
+}
+
+.settings-menu-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.settings-menu-item strong {
+  color: #17395c;
+  font-size: 12px;
+}
+
+.settings-menu-item.active strong {
+  color: #0878d1;
+}
+
+.settings-menu-item small {
+  color: #7d91a8;
+  font-size: 9px;
+}
+
+/* =========================
+   PRIVACY CARD
+========================= */
+
+.settings-privacy-card {
+  margin: 20px 5px 5px;
+  padding: 24px 15px;
+  border-radius: 10px;
+  background: #eef8ff;
+}
+
+.privacy-shield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #d9edff;
+  color: #0878d1;
+  font-size: 28px;
+}
+
+.settings-privacy-card h3 {
+  margin: 0;
+  color: #102f56;
+  font-size: 17px;
+}
+
+.settings-privacy-card p {
+  margin: 8px 0 0;
+  color: #6e88a4;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* =========================
+   MAIN COLUMN
+========================= */
+
+.settings-main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.settings-title > span {
+  flex-shrink: 0;
+  color: #0878d1;
+  font-size: 21px;
+}
+
+.settings-title h2 {
+  margin: 0;
+  color: #102f56;
+  font-size: 16px;
+}
+
+.settings-title p {
+  margin: 5px 0 0;
+  color: #7d91a8;
+  font-size: 9px;
+}
+
+.settings-edit-button {
+  padding: 8px 15px;
+  border: 1px solid #d6e7f5;
+  border-radius: 7px;
+  background: white;
+  color: #0878d1;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.account-settings-card {
+  padding: 20px;
+}
+
+.settings-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.settings-avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #dceeff;
+  color: #0878d1;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.settings-avatar button {
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+  width: 27px;
+  height: 27px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #0878d1;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.settings-profile h3 {
+  margin: 0 0 5px;
+  color: #102f56;
+  font-size: 18px;
+}
+
+.settings-profile p {
+  margin: 0;
+  color: #6884a3;
+  font-size: 10px;
+}
+
+.account-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 25px;
+}
+
+.account-details-grid > div {
+  display: grid;
+  grid-template-columns: 25px 90px 1fr;
+  align-items: center;
+  gap: 6px;
+}
+
+.account-details-grid span {
+  color: #0878d1;
+  font-size: 16px;
+}
+
+.account-details-grid label {
+  color: #6884a3;
+  font-size: 10px;
+}
+
+.account-details-grid strong {
+  color: #183b61;
+  font-size: 10px;
+  word-break: break-word;
+}
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.notification-card {
+  padding: 20px;
+}
+
+.notification-list {
+  margin-top: 18px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #edf7ff;
+  color: #0878d1;
+  font-size: 13px;
+}
+
+.notification-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.notification-text strong {
+  color: #183b61;
+  font-size: 10px;
+}
+
+.notification-text span {
+  color: #8495a7;
+  font-size: 8px;
+}
+
+/* TOGGLE */
+
+.toggle {
+  position: relative;
+  width: 39px;
+  height: 22px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  background: #a9bad0;
+  cursor: pointer;
+}
+
+.toggle span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.2s ease;
+}
+
+.toggle.on {
+  background: #0878d1;
+}
+
+.toggle.on span {
+  left: 20px;
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.language-card {
+  padding: 20px;
+}
+
+.language-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.language-fields > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.language-fields label {
+  color: #6884a3;
+  font-size: 9px;
+}
+
+.language-fields select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #dce7f0;
+  border-radius: 7px;
+  outline: none;
+  background: white;
+  color: #294866;
+  font-size: 10px;
+}
+
+/* =========================
+   RIGHT COLUMN
+========================= */
+
+.settings-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-card {
+  padding: 20px;
+}
+
+.password-fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.password-fields > label {
+  margin-bottom: 6px;
+  color: #183b61;
+  font-size: 10px;
+}
+
+.password-input {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.password-input input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px 0 12px;
+  border: 1px solid #dce7f0;
+  border-radius: 7px;
+  outline: none;
+  color: #294866;
+  font-size: 10px;
+}
+
+.password-input input:focus {
+  border-color: #0878d1;
+}
+
+.password-input input::placeholder {
+  color: #91a1b1;
+}
+
+.password-input span {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #71879d;
+  font-size: 12px;
+}
+
+.update-password-button {
+  width: 100%;
+  height: 39px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 7px;
+  background: #0878d1;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   SECURITY
+========================= */
+
+.security-card {
+  padding: 20px;
+}
+
+.security-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 9px;
+  padding: 11px 0;
+  border: none;
+  border-bottom: 1px solid #edf2f7;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.security-item:last-child {
+  border-bottom: none;
+}
+
+.security-item > span {
+  width: 24px;
+  flex-shrink: 0;
+  color: #0878d1;
+  font-size: 15px;
+  text-align: center;
+}
+
+.security-item div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.security-item strong {
+  color: #183b61;
+  font-size: 10px;
+}
+
+.security-item small {
+  color: #8798a9;
+  font-size: 8px;
+}
+
+.security-item em {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: 12px;
+  background: #ffe8e8;
+  color: #e53935;
+  font-size: 8px;
+  font-style: normal;
+}
+
+.security-item b {
+  flex-shrink: 0;
+  color: #0878d1;
+  font-size: 17px;
+}
+
+.security-item.delete > span,
+.security-item.delete strong {
+  color: #e53935;
+}
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+  padding: 20px;
+}
+
+.quick-action-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.quick-action-buttons button {
+  min-height: 40px;
+  border: 1px solid #0878d1;
+  border-radius: 7px;
+  background: white;
+  color: #0878d1;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quick-action-buttons .delete-action {
+  border-color: #e53935;
+  color: #e53935;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1250px) {
+  .settings-layout {
+    grid-template-columns: 240px minmax(330px, 1fr) 310px;
+  }
+
+  .settings-menu-item {
+    padding: 11px 9px;
+  }
+
+  .settings-menu-item small {
+    font-size: 8px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+  .patient-settings-page {
+    padding: 25px 20px 35px;
+  }
+
+  .settings-layout {
+    grid-template-columns: 220px minmax(300px, 1fr);
+  }
+
+  .settings-right {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quick-actions {
+    grid-column: span 2;
+  }
+
+  .settings-privacy-card {
+    padding: 18px 12px;
+  }
+}
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .settings-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-main,
+  .settings-right {
+    grid-column: auto;
+  }
+
+  .settings-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quick-actions {
+    grid-column: span 2;
+  }
+
+  .settings-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .settings-privacy-card {
+    grid-column: span 2;
+    margin: 10px 0 0;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .patient-settings-page {
+    padding: 20px 15px 30px;
+  }
+
+  .settings-page-header h1 {
+    font-size: 25px;
+  }
+
+  .settings-page-header p {
+    font-size: 11px;
+  }
+
+  .settings-menu {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .settings-menu-item {
+    min-width: 150px;
+    margin: 0;
+  }
+
+  .settings-menu-item small {
+    font-size: 8px;
+  }
+
+  .settings-privacy-card {
+    display: none;
+  }
+
+  .account-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-right {
+    display: flex;
+  }
+
+  .quick-actions {
+    grid-column: auto;
+  }
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 420px) {
+  .patient-settings-page {
+    padding: 15px 10px 25px;
+  }
+
+  .settings-page-header h1 {
+    font-size: 23px;
+  }
+
+  .settings-card {
+    border-radius: 10px;
+  }
+
+  .account-settings-card,
+  .notification-card,
+  .language-card,
+  .password-card,
+  .security-card,
+  .quick-actions {
+    padding: 15px;
+  }
+
+  .settings-title h2 {
+    font-size: 14px;
+  }
+
+  .settings-profile {
+    margin: 15px 0;
+  }
+
+  .settings-avatar {
+    width: 65px;
+    height: 65px;
+  }
+
+  .settings-profile h3 {
+    font-size: 16px;
+  }
+
+  .account-details-grid > div {
+    grid-template-columns: 22px 80px 1fr;
+  }
+
+  .account-details-grid strong {
+    font-size: 9px;
+  }
+
+  .notification-text strong {
+    font-size: 9px;
+  }
+
+  .notification-text span {
+    font-size: 7px;
+  }
+
+  .toggle {
+    width: 36px;
+    height: 20px;
+  }
+
+  .toggle span {
+    width: 14px;
+    height: 14px;
+  }
+
+  .toggle.on span {
+    left: 19px;
+  }
+
+  .quick-action-buttons {
+    grid-template-columns: 1fr;
+  }
+}
