@@ -1,0 +1,499 @@
+.patient-dashboard {
+  padding: 30px 35px 45px;
+  background: #f5f9ff;
+  min-height: calc(100vh - 80px);
+}
+
+.patient-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 28px;
+}
+
+.patient-small-title {
+  color: #0878d1;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.patient-welcome h1 {
+  color: #102f56;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.patient-welcome p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.patient-welcome-date {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 12px;
+  padding: 14px 18px;
+  min-width: 190px;
+  box-shadow: 0 5px 18px rgba(31, 78, 121, 0.05);
+}
+
+.patient-welcome-date span {
+  display: block;
+  color: #8a99aa;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.patient-welcome-date strong {
+  color: #102f56;
+  font-size: 14px;
+}
+
+.patient-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.patient-stat-card {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+  box-shadow: 0 5px 18px rgba(31, 78, 121, 0.04);
+}
+
+.patient-stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  background: #eaf5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.patient-stat-card span {
+  color: #7b8b9e;
+  font-size: 12px;
+}
+
+.patient-stat-card h2 {
+  color: #102f56;
+  font-size: 25px;
+  margin: 3px 0;
+}
+
+.patient-stat-card p {
+  color: #0878d1;
+  font-size: 11px;
+}
+
+.patient-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.patient-card {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 15px;
+  padding: 23px;
+  min-width: 0;
+  box-shadow: 0 5px 18px rgba(31, 78, 121, 0.04);
+}
+
+.patient-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.patient-section-label {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.patient-card h2 {
+  color: #102f56;
+  font-size: 19px;
+  margin-top: 4px;
+}
+
+.patient-view-button {
+  border: none;
+  background: #eef7ff;
+  color: #0878d1;
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-appointment {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #edf2f7;
+  min-width: 0;
+}
+
+.patient-appointment-date {
+  width: 50px;
+  height: 58px;
+  background: #eef7ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.patient-appointment-date strong {
+  color: #0878d1;
+  font-size: 20px;
+}
+
+.patient-appointment-date span {
+  color: #7890a8;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.patient-appointment-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-appointment-info h3 {
+  color: #243b53;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.patient-appointment-info p {
+  color: #0878d1;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.patient-appointment-info span {
+  color: #8a99aa;
+  font-size: 11px;
+}
+
+.patient-status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.patient-status.confirmed {
+  color: #18864b;
+  background: #e9f8ef;
+}
+
+.patient-status.pending {
+  color: #b27600;
+  background: #fff5dc;
+}
+
+.patient-doctor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid #edf2f7;
+  min-width: 0;
+}
+
+.patient-doctor-avatar {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #e8f4ff;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.patient-doctor div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-doctor h3 {
+  color: #243b53;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.patient-doctor p {
+  color: #8a99aa;
+  font-size: 11px;
+}
+
+.patient-doctor button {
+  border: none;
+  background: transparent;
+  color: #0878d1;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-record {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  border-top: 1px solid #edf2f7;
+  min-width: 0;
+}
+
+.patient-record-icon,
+.patient-medicine-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #eef7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.patient-record div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-record h3 {
+  color: #243b53;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.patient-record p {
+  color: #8a99aa;
+  font-size: 10px;
+}
+
+.patient-record span {
+  color: #0878d1;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.patient-prescription {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid #edf2f7;
+}
+
+.patient-prescription > div:nth-child(2) {
+  min-width: 0;
+}
+
+.patient-prescription h3 {
+  color: #243b53;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.patient-prescription p {
+  color: #718096;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.patient-prescription span {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.patient-health-banner {
+  background: linear-gradient(110deg, #e7f4ff, #f5fbff);
+  border: 1px solid #d8eafa;
+  border-radius: 15px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.patient-health-banner span {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.patient-health-banner h2 {
+  color: #102f56;
+  font-size: 21px;
+  margin: 6px 0;
+}
+
+.patient-health-banner p {
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 560px;
+}
+
+.patient-health-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: white;
+  color: #0878d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .patient-dashboard {
+    padding: 25px;
+  }
+
+  .patient-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .patient-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .patient-dashboard {
+    padding: 22px 18px 35px;
+  }
+
+  .patient-welcome h1 {
+    font-size: 26px;
+  }
+
+  .patient-welcome-date {
+    min-width: 165px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .patient-dashboard {
+    padding: 18px 14px 30px;
+  }
+
+  .patient-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .patient-welcome h1 {
+    font-size: 23px;
+  }
+
+  .patient-welcome-date {
+    width: 100%;
+  }
+
+  .patient-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .patient-stat-card {
+    padding: 16px;
+  }
+
+  .patient-card {
+    padding: 17px;
+  }
+
+  .patient-card-header {
+    align-items: flex-start;
+  }
+
+  .patient-appointment {
+    align-items: flex-start;
+  }
+
+  .patient-status {
+    display: none;
+  }
+
+  .patient-health-banner {
+    padding: 20px;
+  }
+}
+
+/* SMALL PHONE */
+
+@media (max-width: 420px) {
+  .patient-welcome h1 {
+    font-size: 21px;
+  }
+
+  .patient-card-header {
+    flex-direction: column;
+  }
+
+  .patient-view-button {
+    align-self: flex-start;
+  }
+
+  .patient-appointment-info h3,
+  .patient-doctor h3,
+  .patient-record h3,
+  .patient-prescription h3 {
+    font-size: 12px;
+  }
+
+  .patient-health-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 23px;
+  }
+}

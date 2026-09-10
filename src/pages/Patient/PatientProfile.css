@@ -1,0 +1,792 @@
+.patient-profile-page {
+  min-height: calc(100vh - 80px);
+  padding: 30px 35px 45px;
+  background: #f7faff;
+}
+
+/* HEADER */
+
+.profile-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.profile-page-header h1 {
+  margin: 0 0 5px;
+  color: #102f56;
+  font-size: 30px;
+}
+
+.profile-page-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.edit-profile-button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  background: #0878d1;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* PROFILE OVERVIEW */
+
+.profile-overview-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 18px 28px;
+  border: 1px solid #e1ebf5;
+  border-radius: 12px;
+  background: white;
+}
+
+.profile-main-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  min-width: 0;
+}
+
+.profile-photo-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 5px solid #edf7ff;
+  border-radius: 50%;
+  background: #dceeff;
+  color: #0878d1;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.camera-button {
+  position: absolute;
+  right: -2px;
+  bottom: 5px;
+  width: 38px;
+  height: 38px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: #0878d1;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-basic-info h2 {
+  margin: 0 0 5px;
+  color: #102f56;
+  font-size: 28px;
+}
+
+.patient-id {
+  margin: 0 0 18px;
+  color: #5879a0;
+  font-size: 14px;
+}
+
+.profile-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  color: #506d8c;
+  font-size: 11px;
+}
+
+.profile-contact-row span {
+  white-space: nowrap;
+}
+
+.profile-quote {
+  width: 280px;
+  flex-shrink: 0;
+  padding: 17px 22px;
+  border-radius: 10px;
+  background: #edf7ff;
+}
+
+.quote-mark {
+  color: #9ed0fa;
+  font-size: 40px;
+  line-height: 20px;
+}
+
+.profile-quote p {
+  margin: 8px 0 13px;
+  color: #45688e;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.profile-quote span {
+  display: block;
+  width: 45px;
+  height: 3px;
+  border-radius: 3px;
+  background: #7cbcf0;
+}
+
+/* TABS */
+
+.profile-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin: 18px 0 15px;
+  padding: 3px;
+  border: 1px solid #e1ebf5;
+  border-radius: 10px;
+  background: white;
+}
+
+.profile-tab {
+  min-height: 42px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: #59799c;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.profile-tab.active {
+  border: 1px solid #0878d1;
+  color: #0878d1;
+  background: #f7fbff;
+  font-weight: 600;
+}
+
+/* CONTENT */
+
+.profile-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 15px;
+}
+
+.profile-left-column,
+.profile-right-column {
+  min-width: 0;
+}
+
+.profile-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-card {
+  border: 1px solid #e1ebf5;
+  border-radius: 12px;
+  background: white;
+}
+
+/* CARD HEADER */
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h2,
+.profile-card > h2 {
+  margin: 0;
+  color: #102f56;
+  font-size: 16px;
+}
+
+.small-edit-button {
+  border: 1px solid #d7e8f7;
+  border-radius: 6px;
+  padding: 7px 15px;
+  background: white;
+  color: #0878d1;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* PERSONAL INFO */
+
+.personal-information-card {
+  padding: 20px 22px;
+}
+
+.personal-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 22px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-right: 30px;
+}
+
+.info-column + .info-column {
+  padding-right: 0;
+  padding-left: 30px;
+  border-left: 1px solid #e8eef5;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.info-icon {
+  width: 20px;
+  flex-shrink: 0;
+  color: #0878d1;
+  font-size: 17px;
+  text-align: center;
+}
+
+.info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-item label {
+  color: #6884a3;
+  font-size: 10px;
+}
+
+.info-item strong {
+  color: #183b61;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* BOTTOM */
+
+.profile-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.picture-card,
+.account-card {
+  padding: 20px;
+}
+
+.picture-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.picture-preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  flex-shrink: 0;
+  border: 4px solid #edf7ff;
+  border-radius: 50%;
+  background: #dceeff;
+  color: #0878d1;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.picture-preview button {
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #0878d1;
+  color: white;
+  font-size: 11px;
+}
+
+.picture-details {
+  min-width: 0;
+}
+
+.picture-details p {
+  margin: 0 0 5px;
+  color: #496985;
+  font-size: 11px;
+}
+
+.picture-details > span {
+  color: #93a2b2;
+  font-size: 9px;
+}
+
+.picture-buttons {
+  display: flex;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.upload-button,
+.remove-button {
+  padding: 8px 11px;
+  border-radius: 6px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.upload-button {
+  border: none;
+  background: #0878d1;
+  color: white;
+}
+
+.remove-button {
+  border: 1px solid #dce7f0;
+  background: white;
+  color: #667d94;
+}
+
+/* ACCOUNT */
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.account-info > div {
+  display: grid;
+  grid-template-columns: 20px 90px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-info > div > span {
+  color: #0878d1;
+  font-size: 14px;
+}
+
+.account-info label {
+  color: #6884a3;
+  font-size: 9px;
+}
+
+.account-info strong {
+  color: #183b61;
+  font-size: 9px;
+}
+
+.active-status {
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #dcf7e9;
+  color: #15965a !important;
+}
+
+/* COMPLETION */
+
+.completion-card {
+  padding: 20px;
+}
+
+.completion-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.completion-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border: 9px solid #25b875;
+  border-radius: 50%;
+}
+
+.completion-circle strong {
+  color: #183b61;
+  font-size: 15px;
+}
+
+.completion-content h3 {
+  margin: 0 0 5px;
+  color: #183b61;
+  font-size: 12px;
+}
+
+.completion-content p {
+  margin: 0;
+  color: #8a9aaa;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.completion-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #edf9f4;
+}
+
+.completion-message > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #25b875;
+  color: white;
+  font-size: 12px;
+}
+
+.completion-message strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #183b61;
+  font-size: 10px;
+}
+
+.completion-message p {
+  margin: 0;
+  color: #64849f;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* QUICK ACTIONS */
+
+.quick-actions-card {
+  padding: 20px;
+}
+
+.quick-actions-card > h2 {
+  margin-bottom: 15px;
+}
+
+.quick-actions-card button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 9px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #dfebf5;
+  border-radius: 7px;
+  background: white;
+  color: #4d6e90;
+  text-align: left;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.quick-actions-card button:last-child {
+  margin-bottom: 0;
+}
+
+.quick-actions-card button:hover {
+  border-color: #aad4f4;
+  background: #f7fbff;
+}
+
+.quick-actions-card button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #edf7ff;
+  color: #0878d1;
+  font-size: 12px;
+}
+
+.quick-actions-card button b {
+  margin-left: auto;
+  color: #0878d1;
+  font-size: 17px;
+}
+
+/* HELP */
+
+.profile-help-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #eaf6ff;
+}
+
+.help-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: #0878d1;
+  font-size: 23px;
+}
+
+.profile-help-banner h3 {
+  margin: 0 0 3px;
+  color: #102f56;
+  font-size: 13px;
+}
+
+.profile-help-banner p {
+  margin: 0;
+  color: #64819f;
+  font-size: 9px;
+}
+
+.profile-help-banner button {
+  margin-left: auto;
+  padding: 9px 18px;
+  border: 1px solid #0878d1;
+  border-radius: 7px;
+  background: white;
+  color: #0878d1;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .profile-overview-card {
+    padding: 18px;
+  }
+
+  .profile-quote {
+    width: 240px;
+  }
+
+  .profile-content-grid {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+
+  .profile-contact-row {
+    gap: 8px 14px;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .patient-profile-page {
+    padding: 25px 20px 35px;
+  }
+
+  .profile-overview-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-quote {
+    width: 100%;
+  }
+
+  .profile-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-right-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .patient-profile-page {
+    padding: 20px 15px 30px;
+  }
+
+  .profile-page-header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .profile-page-header h1 {
+    font-size: 24px;
+  }
+
+  .profile-page-header p {
+    font-size: 11px;
+  }
+
+  .edit-profile-button {
+    padding: 9px 12px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .profile-main-info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-basic-info h2 {
+    font-size: 23px;
+  }
+
+  .profile-contact-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .profile-tabs {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .profile-tab {
+    min-width: 150px;
+  }
+
+  .personal-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-column,
+  .info-column + .info-column {
+    padding: 0;
+    border: none;
+  }
+
+  .info-column + .info-column {
+    margin-top: 19px;
+  }
+
+  .profile-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-right-column {
+    display: flex;
+  }
+
+  .profile-help-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .profile-help-banner button {
+    width: 100%;
+    margin-left: 52px;
+  }
+}
+
+/* SMALL PHONE */
+
+@media (max-width: 420px) {
+  .patient-profile-page {
+    padding: 15px 10px 25px;
+  }
+
+  .profile-page-header {
+    flex-direction: column;
+  }
+
+  .edit-profile-button {
+    width: 100%;
+  }
+
+  .profile-overview-card {
+    padding: 15px;
+  }
+
+  .profile-photo {
+    width: 95px;
+    height: 95px;
+  }
+
+  .profile-basic-info h2 {
+    font-size: 21px;
+  }
+
+  .profile-quote {
+    padding: 14px;
+  }
+
+  .profile-tabs {
+    margin-top: 12px;
+  }
+
+  .profile-tab {
+    min-width: 140px;
+    font-size: 10px;
+  }
+
+  .personal-information-card,
+  .picture-card,
+  .account-card,
+  .completion-card,
+  .quick-actions-card {
+    padding: 15px;
+  }
+
+  .picture-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .picture-buttons {
+    flex-wrap: wrap;
+  }
+
+  .account-info > div {
+    grid-template-columns: 20px 80px 1fr;
+  }
+
+  .profile-help-banner {
+    padding: 14px;
+  }
+
+  .profile-help-banner button {
+    margin-left: 0;
+  }
+}
