@@ -1,0 +1,124 @@
+.hero {
+  width: 100%;
+  min-height: 520px;
+
+  background: linear-gradient(
+    90deg,
+    #f3f8ff 0%,
+    #f8fbff 55%,
+    #eaf4ff 100%
+  );
+
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 50px 7%;
+  box-sizing: border-box;
+}
+
+
+/* TEXT */
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-small-title {
+  color: #0757b8;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 {
+  color: #101f3d;
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+  color: #0757b8;
+}
+
+.hero-description {
+  color: #53627a;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 25px;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.primary-btn {
+  background-color: #0757b8;
+  color: white;
+  border: 1px solid #0757b8;
+}
+
+.primary-btn:hover {
+  background-color: #06499b;
+}
+
+.secondary-btn {
+  background-color: white;
+  color: #0757b8;
+  border: 1px solid #0757b8;
+}
+
+.secondary-btn:hover {
+  background-color: #f0f6ff;
+}
+
+
+/* IMAGE */
+
+.hero-image {
+  width: 45%;
+  height: 450px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,756 @@
+.patient-lab-page {
+  padding: 30px 35px 45px;
+  background: #f5f9ff;
+  min-height: calc(100vh - 80px);
+}
+
+.patient-lab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.patient-lab-label {
+  color: #0878d1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.patient-lab-header h1 {
+  color: #102f56;
+  font-size: 30px;
+  margin: 6px 0;
+}
+
+.patient-lab-header p {
+  color: #718096;
+  font-size: 13px;
+}
+
+.patient-upload-lab-button {
+  border: none;
+  background: #0878d1;
+  color: white;
+  border-radius: 9px;
+  padding: 13px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-upload-lab-button span {
+  font-size: 17px;
+  margin-right: 7px;
+}
+
+/* STATS */
+
+.patient-lab-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.patient-lab-stat {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 13px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.patient-lab-stat-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.patient-lab-stat.total .patient-lab-stat-icon {
+  background: #e7f3ff;
+  color: #0878d1;
+}
+
+.patient-lab-stat.normal .patient-lab-stat-icon {
+  background: #e4f8ee;
+  color: #16a56b;
+}
+
+.patient-lab-stat.abnormal .patient-lab-stat-icon {
+  background: #fff0d9;
+  color: #d98900;
+}
+
+.patient-lab-stat.pending .patient-lab-stat-icon {
+  background: #eee8ff;
+  color: #7656c7;
+}
+
+.patient-lab-stat span {
+  color: #718096;
+  font-size: 11px;
+}
+
+.patient-lab-stat h2 {
+  color: #102f56;
+  font-size: 24px;
+  margin: 2px 0;
+}
+
+.patient-lab-stat p {
+  color: #0878d1;
+  font-size: 10px;
+}
+
+/* MAIN */
+
+.patient-lab-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 225px;
+  gap: 20px;
+}
+
+.patient-lab-left {
+  min-width: 0;
+}
+
+/* TOOLBAR */
+
+.patient-lab-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.patient-lab-search {
+  flex: 1;
+  height: 40px;
+  background: white;
+  border: 1px solid #dce7f2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.patient-lab-search span {
+  color: #0878d1;
+  font-size: 20px;
+}
+
+.patient-lab-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #243b53;
+  font-size: 10px;
+}
+
+.patient-lab-search input::placeholder {
+  color: #9aa9b9;
+}
+
+.patient-lab-toolbar select {
+  height: 40px;
+  border: 1px solid #dce7f2;
+  background: white;
+  color: #52677d;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 10px;
+  outline: none;
+}
+
+/* LIST */
+
+.patient-lab-list-card {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 13px;
+  overflow-x: auto;
+  box-shadow: 0 5px 18px rgba(31, 78, 121, 0.04);
+}
+
+.patient-lab-table-header,
+.patient-lab-row {
+  min-width: 820px;
+  display: grid;
+  grid-template-columns: minmax(230px, 1.5fr) 90px 90px 80px 125px 70px;
+  gap: 12px;
+  align-items: center;
+}
+
+.patient-lab-table-header {
+  padding: 12px 15px;
+  background: #f7fbff;
+  color: #8090a2;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.patient-lab-row {
+  padding: 12px 15px;
+  border-top: 1px solid #edf2f7;
+}
+
+.patient-lab-test {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.patient-lab-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.patient-lab-icon.green {
+  background: #e5f8ef;
+}
+
+.patient-lab-icon.red {
+  background: #ffe8ed;
+}
+
+.patient-lab-icon.blue {
+  background: #e7f3ff;
+}
+
+.patient-lab-icon.purple {
+  background: #f0eaff;
+}
+
+.patient-lab-icon.orange {
+  background: #fff3dc;
+}
+
+.patient-lab-test > div:last-child {
+  min-width: 0;
+}
+
+.patient-lab-test h3 {
+  color: #243b53;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.patient-lab-test p {
+  color: #8a99aa;
+  font-size: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patient-lab-date {
+  color: #52677d;
+  font-size: 9px;
+}
+
+.patient-lab-type,
+.patient-lab-result {
+  width: fit-content;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.patient-lab-type.green,
+.patient-lab-type.blue {
+  background: #e7f3ff;
+  color: #0878d1;
+}
+
+.patient-lab-type.red {
+  background: #ffe8ed;
+  color: #df3e61;
+}
+
+.patient-lab-type.purple {
+  background: #f0eaff;
+  color: #7656c7;
+}
+
+.patient-lab-type.orange {
+  background: #fff3dc;
+  color: #c57c00;
+}
+
+.patient-lab-result.normal {
+  background: #e3f8ec;
+  color: #168657;
+}
+
+.patient-lab-result.high {
+  background: #ffe8ed;
+  color: #df3e61;
+}
+
+.patient-lab-result.low {
+  background: #fff3dc;
+  color: #c57c00;
+}
+
+.patient-lab-result.pending {
+  background: #f0eaff;
+  color: #7656c7;
+}
+
+.patient-lab-doctor strong {
+  display: block;
+  color: #243b53;
+  font-size: 9px;
+  margin-bottom: 3px;
+}
+
+.patient-lab-doctor span {
+  color: #8a99aa;
+  font-size: 8px;
+}
+
+.patient-lab-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.patient-lab-actions button:first-child {
+  border: none;
+  background: #eef7ff;
+  color: #0878d1;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.patient-lab-actions button:last-child {
+  border: none;
+  background: transparent;
+  color: #0878d1;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.patient-lab-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 2px;
+  color: #718096;
+  font-size: 10px;
+}
+
+.patient-lab-pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.patient-lab-pagination button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dce7f2;
+  background: white;
+  color: #52677d;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.patient-lab-pagination button.active {
+  background: #0878d1;
+  border-color: #0878d1;
+  color: white;
+}
+
+/* RIGHT SIDE */
+
+.patient-lab-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.patient-upload-lab-card,
+.patient-test-categories,
+.patient-lab-help,
+.patient-lab-note {
+  background: white;
+  border: 1px solid #e1ebf7;
+  border-radius: 13px;
+  padding: 16px;
+}
+
+.patient-upload-lab-card {
+  background: #e5f4ff;
+}
+
+.patient-lab-doctor-icon {
+  text-align: right;
+  font-size: 45px;
+  height: 52px;
+}
+
+.patient-upload-lab-card h2 {
+  color: #102f56;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.patient-upload-lab-card p {
+  color: #718096;
+  font-size: 9px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.patient-lab-upload-box {
+  border: 1px dashed #afd2ed;
+  background: white;
+  border-radius: 9px;
+  padding: 14px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.patient-lab-upload-box span {
+  color: #0878d1;
+  font-size: 24px;
+}
+
+.patient-lab-upload-box strong {
+  color: #52677d;
+  font-size: 8px;
+}
+
+.patient-lab-upload-box small {
+  color: #9aa9b9;
+  font-size: 7px;
+}
+
+.patient-upload-lab-card > small {
+  display: block;
+  text-align: center;
+  color: #9aa9b9;
+  font-size: 7px;
+  margin-top: 7px;
+}
+
+/* CATEGORIES */
+
+.patient-test-categories h3 {
+  color: #243b53;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.patient-test-categories div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.patient-test-categories div:last-child {
+  border-bottom: none;
+}
+
+.patient-test-categories span {
+  color: #718096;
+  font-size: 9px;
+}
+
+.patient-test-categories strong {
+  color: #0878d1;
+  font-size: 9px;
+}
+
+/* HELP */
+
+.patient-lab-help > div {
+  color: #0878d1;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.patient-lab-help h3 {
+  color: #243b53;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.patient-lab-help p {
+  color: #718096;
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.patient-lab-help button {
+  width: 100%;
+  border: none;
+  background: #eef7ff;
+  color: #0878d1;
+  border-radius: 7px;
+  padding: 9px;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* NOTE */
+
+.patient-lab-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.patient-lab-note > div:first-child {
+  font-size: 21px;
+}
+
+.patient-lab-note h3 {
+  color: #243b53;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.patient-lab-note p {
+  color: #718096;
+  font-size: 8px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.patient-lab-note span {
+  color: #0878d1;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+/* BANNER */
+
+.patient-lab-banner {
+  margin-top: 20px;
+  background: linear-gradient(110deg, #e2f3ff, #f5fbff);
+  border: 1px solid #d8eafa;
+  border-radius: 13px;
+  padding: 18px 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.patient-lab-banner-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.patient-lab-banner > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-lab-banner span {
+  color: #102f56;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.patient-lab-banner p {
+  color: #718096;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.patient-lab-banner strong {
+  color: #0878d1;
+  font-size: 17px;
+  font-style: italic;
+  text-align: right;
+}
+
+.patient-lab-banner-heart {
+  color: #0878d1;
+  font-size: 28px;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .patient-lab-page {
+    padding: 25px;
+  }
+
+  .patient-lab-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .patient-lab-main {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-lab-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .patient-lab-note {
+    grid-column: span 3;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .patient-lab-page {
+    padding: 22px 18px 35px;
+  }
+
+  .patient-lab-header h1 {
+    font-size: 26px;
+  }
+
+  .patient-lab-right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .patient-lab-note {
+    grid-column: span 2;
+  }
+
+  .patient-lab-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .patient-lab-search {
+    flex-basis: 100%;
+  }
+
+  .patient-lab-toolbar select {
+    flex: 1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .patient-lab-page {
+    padding: 18px 14px 30px;
+  }
+
+  .patient-lab-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .patient-lab-header h1 {
+    font-size: 23px;
+  }
+
+  .patient-upload-lab-button {
+    width: 100%;
+  }
+
+  .patient-lab-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .patient-lab-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .patient-lab-search {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .patient-lab-toolbar select {
+    width: 100%;
+    flex: none;
+  }
+
+  .patient-lab-table-header,
+  .patient-lab-row {
+    min-width: 820px;
+  }
+
+  .patient-lab-right {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-lab-note {
+    grid-column: auto;
+  }
+
+  .patient-lab-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 18px;
+  }
+
+  .patient-lab-banner strong {
+    width: 100%;
+    text-align: left;
+  }
+
+  .patient-lab-banner-heart {
+    display: none;
+  }
+}
+
+/* SMALL PHONE */
+
+@media (max-width: 420px) {
+  .patient-lab-header h1 {
+    font-size: 21px;
+  }
+
+  .patient-lab-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .patient-lab-banner span {
+    font-size: 13px;
+  }
+}

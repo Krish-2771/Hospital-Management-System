@@ -1,0 +1,553 @@
+.patients-page {
+  padding: 30px 35px 45px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.patients-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.patients-header h1 {
+  font-size: 30px;
+  color: #14213d;
+  margin-bottom: 7px;
+}
+
+.patients-header p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.patients-add-button {
+  border: none;
+  background: linear-gradient(135deg, #0878d1, #0757b8);
+  color: white;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.patients-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.patient-stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #edf2f7;
+  box-shadow: 0 5px 18px rgba(20, 33, 61, 0.04);
+  min-width: 0;
+}
+
+.patient-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.patient-stat-card.blue .patient-stat-icon {
+  background: #e8f3ff;
+  color: #0878d1;
+}
+
+.patient-stat-card.green .patient-stat-icon {
+  background: #e5f8ef;
+  color: #16a66a;
+}
+
+.patient-stat-card.yellow .patient-stat-icon {
+  background: #fff4d8;
+  color: #e5a51c;
+}
+
+.patient-stat-card.pink .patient-stat-icon {
+  background: #ffe9ec;
+  color: #e95465;
+}
+
+.patient-stat-card h2 {
+  font-size: 24px;
+  color: #14213d;
+  margin-bottom: 3px;
+}
+
+.patient-stat-card p {
+  color: #718096;
+  font-size: 12px;
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.patients-card {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #edf2f7;
+  box-shadow: 0 6px 22px rgba(20, 33, 61, 0.05);
+  overflow: hidden;
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.patients-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 15px;
+}
+
+.patients-card-header h2 {
+  font-size: 18px;
+  color: #14213d;
+  margin-bottom: 5px;
+}
+
+.patients-card-header p {
+  color: #8a98a9;
+  font-size: 12px;
+}
+
+.patients-filter-button {
+  border: 1px solid #dce5ee;
+  background: white;
+  color: #536377;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.patients-toolbar {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px 18px;
+}
+
+.patients-search {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.patients-search span {
+  color: #8291a3;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.patients-search input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.patients-toolbar select {
+  width: 170px;
+  border: 1px solid #dce5ee;
+  background: white;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #526174;
+  outline: none;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.patients-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.patients-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.patients-table th {
+  text-align: left;
+  background: #f6f9fc;
+  color: #748397;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  padding: 13px 20px;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #edf2f7;
+  white-space: nowrap;
+}
+
+.patients-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.patients-table tbody tr:hover {
+  background: #fbfdff;
+}
+
+/* =========================
+   PATIENT INFO
+========================= */
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.patient-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.patient-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.patient-info strong {
+  color: #14213d;
+  font-size: 13px;
+}
+
+.patient-info span {
+  color: #8a98a9;
+  font-size: 10px;
+}
+
+.patient-basic-info {
+  color: #536377;
+}
+
+.blood-group {
+  display: inline-block;
+  background: #eef6ff;
+  color: #0878d1;
+  padding: 5px 9px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.patient-condition {
+  color: #536377;
+}
+
+.patient-last-visit {
+  color: #718096;
+  font-size: 12px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.patient-status {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.patient-status.active {
+  background: #e3f8ed;
+  color: #14945c;
+}
+
+.patient-status.followup {
+  background: #fff3d8;
+  color: #d99716;
+}
+
+.patient-status.recovered {
+  background: #e5f2ff;
+  color: #0878d1;
+}
+
+/* =========================
+   VIEW BUTTON
+========================= */
+
+.patient-view-button {
+  border: 1px solid #d6e5f2;
+  background: #f4f9ff;
+  color: #0878d1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .patients-page {
+    padding: 25px;
+  }
+
+  .patients-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .patients-table {
+    min-width: 880px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .patients-page {
+    padding: 22px;
+  }
+
+  .patients-card-header {
+    align-items: flex-start;
+  }
+
+  .patients-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .patients-search {
+    min-width: 250px;
+  }
+
+  .patients-toolbar select {
+    width: 180px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .patients-page {
+    padding: 18px 14px 30px;
+  }
+
+  .patients-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .patients-header h1 {
+    font-size: 25px;
+  }
+
+  .patients-header p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .patients-add-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* STATS */
+
+  .patients-stats {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+
+  .patient-stat-card {
+    padding: 15px;
+  }
+
+  .patient-stat-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .patient-stat-card h2 {
+    font-size: 21px;
+  }
+
+  /* MAIN CARD */
+
+  .patients-card {
+    border-radius: 14px;
+  }
+
+  /* CARD HEADER */
+
+  .patients-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .patients-card-header h2 {
+    font-size: 16px;
+  }
+
+  .patients-card-header p {
+    font-size: 11px;
+  }
+
+  .patients-filter-button {
+    width: 100%;
+  }
+
+  /* TOOLBAR */
+
+  .patients-toolbar {
+    flex-direction: column;
+    padding: 0 15px 15px;
+    gap: 9px;
+  }
+
+  .patients-search {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .patients-toolbar select {
+    width: 100%;
+    height: 40px;
+  }
+
+  /* TABLE */
+
+  .patients-table {
+    min-width: 880px;
+  }
+
+  .patients-table th {
+    padding: 11px 14px;
+    font-size: 9px;
+  }
+
+  .patients-table td {
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+
+  .patient-info img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .patient-info strong {
+    font-size: 11px;
+  }
+
+  .patient-info span {
+    font-size: 9px;
+  }
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 420px) {
+  .patients-page {
+    padding: 14px 10px 25px;
+  }
+
+  .patients-header h1 {
+    font-size: 22px;
+  }
+
+  .patients-header p {
+    font-size: 11px;
+  }
+
+  .patient-stat-card {
+    padding: 13px;
+  }
+
+  .patient-stat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .patient-stat-card h2 {
+    font-size: 19px;
+  }
+
+  .patient-stat-card p {
+    font-size: 11px;
+  }
+
+  .patients-card-header {
+    padding: 12px;
+  }
+
+  .patients-toolbar {
+    padding: 0 12px 12px;
+  }
+
+  .patients-table {
+    min-width: 850px;
+  }
+}
